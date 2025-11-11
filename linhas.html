@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu VLT - Linhas</title>
+  <link rel="stylesheet" href="CSS/linhas.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="https://cdn-icons-png.flaticon.com/512/3202/3202926.png" alt="Logo VLT">
+      <h1>Meu VLT</h1>
+    </div>
+    <div class="header-buttons">
+      <button class="btn-suporte" onclick="window.location.href='suporte.html'">Suporte</button>
+      <button class="btn-sair">Sair</button>
+    </div>
+  </header>
+
+  <div class="container">
+    <aside>
+      <nav>
+        <a href="home.html">Início</a>
+        <a href="linhas.html" class="ativo">Linhas</a>
+        <a href="alertas.html">Alertas</a>
+        <a href="horarios.html">Horários</a>
+        <a href="ocorrencias.html">Ocorrências</a>
+        <a href="perfil.html">Perfil</a>
+      </nav>
+    </aside>
+
+    <main>
+      <h2>Linhas do VLT</h2>
+      <p class="descricao">Consulte as linhas em operação e suas informações.</p>
+
+      <input type="text" placeholder="Buscar linha, estação ou trajeto..." class="campo-busca">
+
+      <div class="cards-linhas">
+
+        <div class="card-linha">
+          <h3>Linha 1 — Parangaba / Mucuripe</h3>
+          <p><strong>Trajeto:</strong> Parangaba → Mucuripe</p>
+          <p><strong>Extensão:</strong> 13,2 km</p>
+          <p><strong>Tempo médio:</strong> 35 minutos</p>
+          <p><strong>Status:</strong> 🚆 Em operação</p>
+          <button>Ver detalhes</button>
+        </div>
+
+        <div class="card-linha">
+          <h3>Linha 2 — Antônio Bezerra / Papicu</h3>
+          <p><strong>Trajeto:</strong> Antônio Bezerra → Papicu</p>
+          <p><strong>Extensão:</strong> 18,0 km</p>
+          <p><strong>Tempo médio:</strong> 45 minutos</p>
+          <p><strong>Status:</strong> 🟡 Em testes</p>
+          <button>Ver detalhes</button>
+        </div>
+
+        <div class="card-linha">
+          <h3>Linha 3 — Aeroporto / Centro</h3>
+          <p><strong>Trajeto:</strong> Aeroporto → Centro</p>
+          <p><strong>Extensão:</strong> 9,5 km</p>
+          <p><strong>Tempo médio:</strong> 25 minutos</p>
+          <p><strong>Status:</strong> 🔴 Manutenção</p>
+          <button>Ver detalhes</button>
+        </div>
+
+        <div class="card-linha">
+          <h3>Linha 4 — Messejana / Centro</h3>
+          <p><strong>Trajeto:</strong> Messejana → Centro</p>
+          <p><strong>Extensão:</strong> 12,0 km</p>
+          <p><strong>Tempo médio:</strong> 30 minutos</p>
+          <p><strong>Status:</strong> 🚆 Em operação</p>
+          <button>Ver detalhes</button>
+        </div>
+
+      </div>
+
+      <footer>
+        © 2025 Meu VLT — Projeto acadêmico UNIFOR. Todos os direitos reservados.
+      </footer>
+    </main>
+  </div>
+</body>
+</html>

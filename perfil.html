@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu VLT - Perfil</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="CSS/perfil.css">
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+
+  <header class="header">
+    <div class="flex items-center space-x-2">
+      <img src="https://cdn-icons-png.flaticon.com/512/3202/3202926.png" alt="Logo VLT" class="w-6 h-6">
+      <h1 class="font-semibold text-lg">Meu VLT</h1>
+    </div>
+    <div class="space-x-3">
+      <button class="btn-primary" onclick="window.location.href='suporte.html'">Suporte</button>
+      <button class="btn-logout">Sair</button>
+    </div>
+  </header>
+
+  <div class="flex min-h-screen">
+
+    <aside class="sidebar">
+      <nav class="nav">
+        <a href="home.html" class="nav-link">Início</a>
+        <a href="linhas.html" class="nav-link">Linhas</a>
+        <a href="alertas.html" class="nav-link">Alertas</a>
+        <a href="horarios.html" class="nav-link">Horários</a>
+        <a href="ocorrencias.html" class="nav-link">Ocorrências</a>
+        <a href="perfil.html" class="nav-link-active">Perfil</a>
+      </nav>
+    </aside>
+
+
+    <main class="main-content">
+      <h2 class="text-xl font-semibold mb-1">Meu Perfil</h2>
+      <p class="text-gray-600 mb-6">Gerencie suas informações pessoais e preferências.</p>
+
+      <div class="card max-w-lg mx-auto">
+        <div class="flex items-center space-x-4 mb-6">
+          <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Avatar" class="w-16 h-16 rounded-full border">
+          <div>
+            <h3 class="font-semibold text-lg">Carlos Alberto</h3>
+            <p class="text-gray-500 text-sm">Usuário desde 2024</p>
+          </div>
+        </div>
+
+        <form class="space-y-4">
+          <div>
+            <label class="form-label">Nome completo</label>
+            <input type="text" value="Carlos Alberto Freitas" class="form-input">
+          </div>
+
+          <div>
+            <label class="form-label">E-mail</label>
+            <input type="email" value="carlos@exemplo.com" class="form-input">
+          </div>
+
+          <div>
+            <label class="form-label">Telefone</label>
+            <input type="tel" value="(85) 99999-9999" class="form-input">
+          </div>
+
+          <div>
+            <label class="form-label">Nova senha</label>
+            <input type="password" placeholder="Digite uma nova senha" class="form-input">
+          </div>
+
+          <button type="button" class="btn-primary w-full">Salvar Alterações</button>
+        </form>
+      </div>
+
+      <footer class="footer">
+        © 2025 Meu VLT — Projeto acadêmico UNIFOR. Todos os direitos reservados.
+      </footer>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu VLT - Suporte</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="CSS/suporte.css">
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+
+  <header class="header">
+    <div class="flex items-center space-x-2">
+      <img src="https://cdn-icons-png.flaticon.com/512/3202/3202926.png" alt="Logo VLT" class="w-6 h-6">
+      <h1 class="font-semibold text-lg">Meu VLT</h1>
+    </div>
+    <div class="space-x-3">
+      <button class="btn-primary" onclick="window.location.href='suporte.html'">Suporte</button>
+      <button class="btn-logout">Sair</button>
+    </div>
+  </header>
+
+  <div class="flex min-h-screen">
+
+
+    <aside class="sidebar">
+      <nav class="nav">
+        <a href="home.html" class="nav-link">Início</a>
+        <a href="linhas.html" class="nav-link">Linhas</a>
+        <a href="alertas.html" class="nav-link">Alertas</a>
+        <a href="horarios.html" class="nav-link">Horários</a>
+        <a href="ocorrencias.html" class="nav-link">Ocorrências</a>
+        <a href="perfil.html" class="nav-link">Perfil</a>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <h2 class="text-xl font-semibold mb-1">Central de Suporte</h2>
+      <p class="text-gray-600 mb-6">Entre em contato com nossa equipe ou consulte as dúvidas mais frequentes.</p>
+
+      <div class="card mb-8">
+        <h3 class="font-semibold text-lg mb-3">📞 Contatos diretos</h3>
+        <ul class="space-y-2 text-gray-700 text-sm">
+          <li><strong>Telefone:</strong> (85) 99272-0695</li>
+          <li><strong>E-mail:</strong> suporte@meuvlt.com.br</li>
+          <li><strong>Instagram:</strong> 
+            <a href="https://instagram.com/meuvlt" target="_blank" class="text-blue-600 hover:underline">@meuvlt</a>
+          </li>
+          <li><strong>Atendimento:</strong> Segunda a sexta, 8h às 18h</li>
+        </ul>
+      </div>
+
+      <div class="card mb-8">
+        <h3 class="font-semibold text-lg mb-4">✉️ Enviar mensagem de suporte</h3>
+        <form class="space-y-4">
+          <div>
+            <label class="form-label">Nome</label>
+            <input type="text" placeholder="Seu nome completo" class="form-input">
+          </div>
+
+          <div>
+            <label class="form-label">E-mail</label>
+            <input type="email" placeholder="seuemail@exemplo.com" class="form-input">
+          </div>
+
+          <div>
+            <label class="form-label">Assunto</label>
+            <select class="form-input">
+              <option>Selecione</option>
+              <option>Dúvida geral</option>
+              <option>Problema com o app</option>
+              <option>Feedback ou sugestão</option>
+              <option>Outro</option>
+            </select>
+          </div>
+
+          <div>
+            <label class="form-label">Mensagem</label>
+            <textarea rows="4" placeholder="Descreva sua dúvida ou problema..." class="form-input"></textarea>
+          </div>
+
+          <button type="button" class="btn-primary w-full">Enviar mensagem</button>
+        </form>
+      </div>
+
+      <div class="card">
+        <h3 class="font-semibold text-lg mb-4">💡 Dúvidas frequentes (FAQ)</h3>
+        <div class="space-y-3">
+          <details class="faq-item">
+            <summary class="faq-question">Como consultar os horários das linhas?</summary>
+            <p class="faq-answer">Acesse o menu lateral e clique em <strong>“Horários”</strong> para ver as partidas e chegadas atualizadas de todas as linhas.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">Posso registrar um problema na viagem?</summary>
+            <p class="faq-answer">Sim! Vá até a página <strong>“Ocorrências”</strong> e preencha o formulário para informar o tipo de problema.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">Como alterar meus dados pessoais?</summary>
+            <p class="faq-answer">Na aba <strong>“Perfil”</strong>, você pode editar seu nome, e-mail, telefone e senha.</p>
+          </details>
+        </div>
+      </div>
+
+      <footer class="footer">
+        © 2025 Meu VLT — Projeto acadêmico UNIFOR. Todos os direitos reservados.
+      </footer>
+    </main>
+  </div>
+</body>
+</html>

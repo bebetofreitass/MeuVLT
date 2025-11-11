@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu VLT - Horários</title>
+  <link rel="stylesheet" href="CSS/horarios.css">
+</head>
+<body>
+  
+  <header>
+    <div class="logo">
+      <img src="https://cdn-icons-png.flaticon.com/512/3202/3202926.png" alt="Logo VLT">
+      <h1>Meu VLT</h1>
+    </div>
+    <div class="header-buttons">
+      <button class="btn-suporte" onclick="window.location.href='suporte.html'">Suporte</button>
+      <button class="btn-sair">Sair</button>
+    </div>
+  </header>
+
+  <div class="container">
+    
+    <aside>
+      <nav>
+        <a href="home.html">Início</a>
+        <a href="linhas.html">Linhas</a>
+        <a href="alertas.html">Alertas</a>
+        <a href="horarios.html" class="ativo">Horários</a>
+        <a href="ocorrencias.html">Ocorrências</a>
+        <a href="perfil.html">Perfil</a>
+      </nav>
+    </aside>
+
+    <main>
+      <h2>Horários das Linhas</h2>
+      <p class="descricao">Consulte os horários atualizados de partida e chegada do VLT.</p>
+
+      <div class="filtros">
+        <input type="text" placeholder="Buscar linha ou estação...">
+        <select>
+          <option value="">Selecionar Linha</option>
+          <option value="linha1">Linha 1 — Parangaba / Mucuripe</option>
+          <option value="linha2">Linha 2 — Antônio Bezerra / Papicu</option>
+          <option value="linha3">Linha 3 — Aeroporto / Centro</option>
+          <option value="linha4">Linha 4 — Messejana / Centro</option>
+        </select>
+      </div>
+
+      <div class="aviso">
+        ⚠️ Atualização: devido à manutenção noturna, alguns horários da <strong>Linha 3</strong> foram ajustados.
+      </div>
+
+      <div class="tabela-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Linha</th>
+              <th>Estação Inicial</th>
+              <th>Estação Final</th>
+              <th>Primeira Partida</th>
+              <th>Última Partida</th>
+              <th>Frequência</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="linha">Linha 1</td>
+              <td>Parangaba</td>
+              <td>Mucuripe</td>
+              <td>05:30</td>
+              <td>22:00</td>
+              <td>15 min</td>
+            </tr>
+            <tr>
+              <td class="linha">Linha 2</td>
+              <td>Antônio Bezerra</td>
+              <td>Papicu</td>
+              <td>05:00</td>
+              <td>23:00</td>
+              <td>20 min</td>
+            </tr>
+            <tr>
+              <td class="linha">Linha 3</td>
+              <td>Aeroporto</td>
+              <td>Centro</td>
+              <td>06:00</td>
+              <td>21:30</td>
+              <td>25 min</td>
+            </tr>
+            <tr>
+              <td class="linha">Linha 4</td>
+              <td>Messejana</td>
+              <td>Centro</td>
+              <td>05:20</td>
+              <td>22:15</td>
+              <td>18 min</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <footer>
+        © 2025 Meu VLT — Projeto acadêmico UNIFOR. Todos os direitos reservados.
+      </footer>
+    </main>
+  </div>
+</body>
+</html>

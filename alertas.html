@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu VLT - Alertas</title>
+  <link rel="stylesheet" href="CSS/alertas.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="https://cdn-icons-png.flaticon.com/512/3202/3202926.png" alt="Logo VLT">
+      <h1>Meu VLT</h1>
+    </div>
+    <div class="header-buttons">
+      <button class="btn-suporte" onclick="window.location.href='suporte.html'">Suporte</button>
+      <button class="btn-sair">Sair</button>
+    </div>
+  </header>
+
+  <div class="container">
+
+    <aside>
+      <nav>
+        <a href="home.html">Início</a>
+        <a href="linhas.html">Linhas</a>
+        <a href="alertas.html" class="ativo">Alertas</a>
+        <a href="horarios.html">Horários</a>
+        <a href="ocorrencias.html">Ocorrências</a>
+        <a href="perfil.html">Perfil</a>
+      </nav>
+    </aside>
+
+    <main>
+      <h2>Alertas</h2>
+      <p class="descricao">Fique por dentro das atualizações e ocorrências em tempo real.</p>
+
+      <div class="filtros">
+        <input type="text" placeholder="Buscar alerta ou linha...">
+        <select>
+          <option value="">Filtrar por tipo</option>
+          <option value="operacao">Operação</option>
+          <option value="manutencao">Manutenção</option>
+          <option value="evento">Evento</option>
+        </select>
+      </div>
+
+      <div class="alertas">
+
+        <div class="alerta vermelho">
+          <h3>🚧 Linha 3 — Manutenção programada</h3>
+          <p>Trecho entre <strong>Aeroporto</strong> e <strong>Centro</strong> ficará inoperante nesta sexta (03/11) das 22h às 05h.</p>
+          <span>Publicado em: 02/11/2025 às 18:00</span>
+        </div>
+
+        <div class="alerta amarelo">
+          <h3>⚠️ Linha 1 — Atrasos devido ao clima</h3>
+          <p>Viagens podem apresentar atrasos de até <strong>10 minutos</strong> por conta de fortes chuvas.</p>
+          <span>Publicado em: 02/11/2025 às 17:40</span>
+        </div>
+
+        <div class="alerta azul">
+          <h3>ℹ️ Evento: Dia do Transporte Público</h3>
+          <p>Neste sábado (05/11), passageiros terão acesso gratuito entre 8h e 12h em todas as linhas do VLT.</p>
+          <span>Publicado em: 02/11/2025 às 09:30</span>
+        </div>
+
+      </div>
+
+      <footer>
+        © 2025 Meu VLT — Projeto acadêmico UNIFOR. Todos os direitos reservados.
+      </footer>
+    </main>
+  </div>
+</body>
+</html>
